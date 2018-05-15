@@ -4,5 +4,5 @@
     + <ASPNETCORE_ENVIRONMENT>**Production**</ASPNETCORE_ENVIRONMENT>
     + <ASPNETCORE_ENVIRONMENT>**Development**</ASPNETCORE_ENVIRONMENT>
     
-  - Change the content of Web.production.config and web.development.config according to your needs.
+  - Change the content of Web.Production.config and Web.Development.config according to your needs.
 
