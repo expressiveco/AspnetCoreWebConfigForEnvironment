@@ -3,4 +3,5 @@
   <PropertyGroup>
     <ASPNETCORE_ENVIRONMENT>Production</ASPNETCORE_ENVIRONMENT>
   </PropertyGroup>
+  <Import Project="MyAspNetEnvironment.targets" />
 </Project>
