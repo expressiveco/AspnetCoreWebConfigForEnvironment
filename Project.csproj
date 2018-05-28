@@ -2,22 +2,6 @@
 <PropertyGroup>
   <TargetFramework>netcoreapp2.0</TargetFramework>
 </PropertyGroup>
-<PropertyGroup>
-  <AspNetCoreEnvProduction Condition="'$(ASPNETCORE_ENVIRONMENT)'=='Production'">True</AspNetCoreEnvProduction>
-  <AspNetCoreEnvProduction Condition="'$(ASPNETCORE_ENVIRONMENT)'!='Production'">False</AspNetCoreEnvProduction>
-</PropertyGroup>
-<Choose>
-  <When Condition="'$(AspNetCoreEnvProduction)'=='True'">
-    <PropertyGroup>
-      <ASPNETCORE_ENVIRONMENT_INVERSE>Development</ASPNETCORE_ENVIRONMENT_INVERSE>
-    </PropertyGroup>
-  </When>
-  <Otherwise>
-    <PropertyGroup>
-      <ASPNETCORE_ENVIRONMENT_INVERSE>Production</ASPNETCORE_ENVIRONMENT_INVERSE>
-    </PropertyGroup>
-  </Otherwise>
-</Choose>
 <ItemGroup>
   <Content Update="Web.$(ASPNETCORE_ENVIRONMENT).config" Link="Web.config" CopyToPublishDirectory="PreserveNewest" />
   <Content Update="Web.$(ASPNETCORE_ENVIRONMENT_INVERSE).config" CopyToPublishDirectory="Never" />
