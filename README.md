@@ -6,3 +6,4 @@
     
   - Change the content of Web.Production.config and Web.Development.config according to your needs.
 
+  - Note that ASPNETCORE_ENVIRONMENT property is not available to properties in .csproj file because csproj.user is imported after .csproj file. So, it is available to items and targets.
